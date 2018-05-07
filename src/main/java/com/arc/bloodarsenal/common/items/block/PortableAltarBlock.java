@@ -23,7 +23,7 @@ public class PortableAltarBlock extends ItemBlock
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
     {
-        if (GuiScreen.isShiftKeyDown())
+        if (GuiScreen.isShiftKeyDown() && par1ItemStack != null)
         {
             addHiddenTooltip(par1ItemStack, par3List);
         }
